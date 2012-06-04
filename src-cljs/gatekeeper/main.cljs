@@ -1,4 +1,4 @@
-(ns nongrata.main
+(ns gatekeeper.main
   (:use [jayq.core :only [$]]
         [jayq.util :only [clj->js]])
   (:require [fetch.remotes :as remotes])

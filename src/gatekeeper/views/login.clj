@@ -1,4 +1,4 @@
-(ns nongrata.views.login
+(ns gatekeeper.views.login
   (:use 
     noir.fetch.remotes
     [clojure.data.json :only [read-json json-str]]
@@ -7,8 +7,7 @@
     [hiccup.core :only [html]])
   (:require
     [clj-http.client :as client]
-    [nongrata.views.common :as common]
-    [noir.content.getting-started]
+    [gatekeeper.views.common :as common]
     [noir.session :as session]))
 
 (defn get-hostname 
