@@ -22,15 +22,12 @@
                        (= "okay" (:status response)))
                    (do
                      (log "authentication success!")
-                     (location/reload))
+                     (location/reload true))
                    (js/alert (str "failed authentication:\n" (:reason response))))))
     (js/alert "browserid.org gave us a nil response back...")))
 
 ; TODO make this more jayq, less interopy
-(.bind ($ "#browserid") "click" (fn[evt] (js/alert (str "button clicked! event: " evt))
+(.bind ($ "#browserid") "click" (fn[evt]
                                   (do                       
                                     (navigator.id/get gotAssertion)  
                                     false)))  
-
-(js/alert "JS evaluation reached bottom of the main.js file...")
-

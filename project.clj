@@ -1,15 +1,15 @@
 (defproject gatekeeper "0.1.0-SNAPSHOT"
-  :description "identity on the cooperative web"
+  :description "entering the cooperative web."
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [org.clojure/tools.logging "0.2.3"]
                  [org.clojure/data.json "0.1.2"]
                  [noir "1.3.0-beta3"]
-                 [clj-http "0.2.6"]
-                 [cheshire "2.2.0"]
-                 [jayq "0.1.0-alpha2"]
-                 [crate "0.1.0-alpha2"]
+                 [clj-http "0.4.2"]
+                 [cheshire "4.0.0"]
+                 [jayq "0.1.0-alpha4"]
+                 [crate "0.2.0-alpha3"]
                  [fetch "0.1.0-alpha2"]]
-  :plugins [[lein-cljsbuild "0.1.8"]]
+  :plugins [[lein-cljsbuild "0.2.1"]]
   :cljsbuild {
               :builds [{
                         ; The path to the top-level ClojureScript source directory:
